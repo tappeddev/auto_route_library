@@ -8,7 +8,8 @@ class RootRouter extends $RootRouter {
   final List<AutoRoute> routes = [
     AutoRoute(
       page: HomeRoute.page,
-      path: '/',
+      path: '/home',
+      initial: true,
       children: [
         AutoRoute(
           path: 'books',
