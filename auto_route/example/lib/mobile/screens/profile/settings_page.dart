@@ -7,6 +7,19 @@ class SettingsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Container(color: Colors.grey));
+    return Align(
+      alignment: Alignment.center,
+      child: Container(
+        height: 300,
+        width: 200,
+        color: Colors.redAccent,
+        child: IconButton(
+          icon: Icon(Icons.close),
+          onPressed: () {
+            AutoRouter.of(context).popForced();
+          },
+        ),
+      ),
+    );
   }
 }
