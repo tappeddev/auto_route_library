@@ -2,9 +2,11 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 
 @RoutePage()
-class ProfilePage extends StatelessWidget {
+class SettingsPage extends StatelessWidget {
+  const SettingsPage({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Container(color: Colors.red);
+    return Scaffold(body: Container(color: Colors.grey));
   }
 }
